@@ -1,0 +1,103 @@
+/*<!-- Criando um aquivo de estilos EM CCS -->*/
+
+/*<style>*/
+
+    /* Comentario dentro de um estilo */
+    p{
+        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:14px;
+        color: rgb(65, 15, 112);
+
+    }
+
+    body{
+      
+        background-color: rgb(175, 224, 175);
+    }
+            
+    /* Como criar um estilo de classe para ser utilizada em uma chamada com HTML */
+    .menu{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(44, 105, 218);
+        /* background-color: brown; */
+    }
+
+    .titulo{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(24, 18, 19);
+    }
+
+    .msn{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(3, 16, 78);    
+    }
+
+    /* Criando estilos para componentes ID, ou seja que contenham nome*/
+
+    .campo_nome{
+        position: relative;
+       /* left:125px;*/
+        width: 260px;
+        color: brown;
+        background-color: yellow;
+    }
+
+    .campo_email{
+        position: relative;
+       /* left:125px;*/
+        width: 320px;
+        color: brown;
+        background-color: yellow;
+    }
+
+    .campo_senha{
+        position: relative;
+       /* left:125px; */
+        width: 60px;
+        color: brown;
+        background-color: yellow;
+    }
+    
+    /* BootStrap*/
+    .container{
+        border: 3px solid;
+        /* width: 500px; */
+        width: 100%;
+        
+    }
+
+    .div1{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .div2{
+        
+        background-color: blue;
+    }
+    
+    .div3{
+        background-color: rgb(166, 255, 0);
+    }
+    
+    .div4{
+        background-color: rgb(0, 204, 255);
+    }
+    
+    #formulario_contato{
+        background-color: rgb(119, 119, 134);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+
+    }
+
+
+
+/*</style>*/
+/*<!-- Criando um aquivo de estilos -->*/
