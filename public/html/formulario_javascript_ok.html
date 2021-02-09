@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em JavaScript</title>
+
+    <!-- criando script para validar campos de um formulário-->
+    <script>
+        function validar()
+        {
+            var nome =formuser.nome.value;
+            var email=formuser.email.value;
+            // validação para o campo nome
+            if(nome==""){
+                alert("Preenchimento do campo Nome é obrigatório");
+                formuser.nome.focus();
+                return false;
+            }
+            // validação para o campo email
+            if(email=="" || email.indexOf('@')==-1){
+                alert("O preenchimento do campo Email é obrigatório ou o email não é válido");
+                formuser.email.focus();
+                return false;
+            }
+            alert ("Olá "+nome+ " seja bem vindo, iremos enviar todo o nosso portifólio para o seu email "+email);
+
+        }
+
+
+    </script>
+</head>
+<body>
+    
+    <form id="formuser" method="POST">
+        Nome: <input type="text" name="nome"><br><br>
+        Email: <input type="text" name="email"><br><br>
+
+        <input type="submit" onclick="return validar()" value="Enviar">
+    </form>
+
+
+</body>
+</html>
+

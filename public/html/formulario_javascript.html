@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario em JAVASCRIPT</title>
+
+    <!-- VALIDANDO CAMPOS DE UM FORMULARIO -->
+    <script>
+
+        function validar() 
+        {
+            var nome = formuser.nome.value;
+            var email =formuser.email.value;
+
+            if (nome == "") {
+
+                alert("Preenchimento do campo nome eh obrigatorio");
+                formuser.nome.focus();
+                return false;    
+
+            }
+
+            if (email == "" || email.indexof('@') ==-1)
+             
+            {
+                alert("Preenchimento do campo email eh obrigatorio ou email nao eh valido");
+                formuser.email.focus();
+                return false;    
+
+            }
+
+            alert("Ola " + nome + " seja bem vindo iremos enviar todo o nosso portifolio para o seu email" + email);
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+    <form id="formuser" method="POST">
+
+        Nome: <input type="text" name="nome"> <br><br>
+        Email: <input type="text" name="email"><br><br>
+
+        <input type="submit" onclick="return validar()" value="Enviar">
+
+
+    </form>
+
+</body>
+</html>

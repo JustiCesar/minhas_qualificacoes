@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy</title>
+    
+    <!-- CHAMANDO CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+
+</head>
+
+<body>
+    <!-- Criando o menu principal da nossa página-->
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <td align="center"><a href="../html/index.html"><img src="../imagens/logo.png" width="200" height="40"></a>
+            </td>
+            <td>QUEM SOMOS</td>
+            <td>CURSOS ONLINE</td>
+            <td>PARA EMPRESAS</td>
+            <td>CONTATO</td>
+            <td>CONTEÚDOS</td>
+        </tr>
+    </table>
+
+    <!-- CRIANDO CAMPOS DO FORMULARIO -->
+    <br>
+    <br>
+    <form id="formulario_contato" method="POST">
+        <!-- permite criar uma caixa -->
+        <fieldset>
+            <!-- Legenda -->
+            <br>
+            <legend><b>Preencha nosso formulario para fazer um dos nossos cursos ou tirar duvidas</b></legend>   
+         
+        <!-- CRIANDO CAMPOS DO FORMULARIO -->
+        <label>Nome Aluno(a) </label><input type="text" name="nome" class="campo_nome" required><br><br>
+        <label>Email Aluno(a) </label><input type="email" name="email" class="campo_email"  required><br><br>
+        <label>Senha : </label><input type="password" name="senha" class="campo_senha"  required><br><br>
+        <labeel>Genero : </label> <br><br>
+
+            <!-- FORMULARIO DE OPCOES -->
+            <input type="radio" name="opcao_radio" value="Feminimo" /> Feminimo
+            <input type="radio" name="opcao_radio" value="Masculino" /> Masculino
+            <input type="radio" name="opcao_radio" value="Outros" /> Outros
+            <input type="radio" name="opcao_radio" value="Nao_Informado" /> Nao Informado <br><br>
+
+            <!-- MENU DE OPCOES -->
+            <label>Escolha o curso desejado:</label>
+            <select required>
+                <option value=""></option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+                <option value="xml">XML</option>
+            </select>
+            <br><br>
+
+            <!-- BOTAO DE OPCOES -->
+            <label>Escolha o periodo?</label>
+            <input type="checkbox"  name="OPCAO" value="manhã"> Manhã
+            <input type="checkbox"  name="OPCAO" value="tarde"> Tarde
+            <input type="checkbox"  name="OPCAO" value="noite"> Noite<br><br>
+
+            <!-- DATA -->
+            <label>Qual data deseja fazer </label> <input type="date" name="data"><br><br>
+
+            <label>Mensagem</label><br>
+            <textarea name="mensagem" cols="40" rows="3"> </textarea><br>
+
+            <label>Para realizar a nosso curso envie um comprovante de residencia</label>
+            <input type="file" value="caminho_Arquivo"><br>
+
+            <!-- ARQUIVO ANEXO -->
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+
+    </form>
+    <!-- CRIANDO CAMPOS DO FORMULARIO -->
+
+</body>
+
+</html>
